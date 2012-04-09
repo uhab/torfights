@@ -15,7 +15,7 @@ include("../inc/header.php");
 
 <p><span style="color:blue"> Location:  Nar Shaddaa, Promenade cantina, Stage floor.</span></p>
 
-<p>Participants must register with a member of Merenzane Gold for the tournament.</p>
+<p>Participants must register with a member of <span style="color:gold">Merenzane Gold</span> for the tournament.</p>
 
 <p>Participants choose a companion at time of registration and that companion is locked in for the whole tournament.</p>
 
@@ -25,7 +25,7 @@ include("../inc/header.php");
 
 <p>Player 1 in the bracket will be the lowest roll, Player 16 will be the highest.</p>
 
-<p>Each battle in the tournament will consist of each participant's "bum" fighting each other.  The controlling participant must order their bumn to attack the other players and then move to the assigned area.</p>
+<p>Each battle in the tournament will consist of each participant's "bum" fighting each other.  The controlling participant must order their bum to attack the other players and then move to the assigned area.</p>
 
 <p>Once in the assigned area, the participant must not move nor activate any personal ability for the remainder of the battle.</p>
 
