@@ -34,6 +34,5 @@ include("inc/header.php");
       </div>
 
 <!-- testing one more change again -->
-test
 
-<?php include("inc/footer.php")
+<?php include("inc/footer.php"); ?>
