@@ -125,7 +125,7 @@ include("../inc/header.php");
     </tr>
     <tr>
       <td id="td_element_field_6" style="">
-        <textarea id="element_6" name="element_6" cols="300" rows="15" class="validate[required]">
+        <textarea id="element_6" name="element_6" cols="600" rows="15" class="validate[required]">
 </textarea>
         <div style="padding-bottom:8px;color:#000000;"></div>
       </td>
