@@ -9,7 +9,7 @@ include("../inc/header.php");
 
 <h1>Tournament Rules</h1>
 
-<h2>The Bum Fights!:</h2>
+<h2>The Bum Fights!</h2>
 
 <p><span style="color:red">Payout:  Champion receives: 1,000,000 credits | Second place receives: 300,000 credits.</span></p>
 
