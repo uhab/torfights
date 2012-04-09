@@ -19,7 +19,7 @@ include("../inc/header.php");
 
 <p>Participants choose a companion at time of registration and that companion is locked in for the whole tournament.</p>
 
-<p>There will be a registration fee of 100,000 credits that must be collected at the time of registration.</p>
+<p>There will be a registration fee of <span style="color:red">100,000</span> credits that must be collected at the time of registration.</p>
 
 <p>Each Participant will perform a roll of /roll 100 which will be used to determine bracket placement for the tournament.</p>
 
