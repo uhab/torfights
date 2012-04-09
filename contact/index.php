@@ -29,7 +29,7 @@ include("../inc/header.php");
     </tr>
     <tr>
       <td id="td_element_field_0" style="">
-        <input id="element_0" name="element_0" value="" size="50" class="validate[required]" type="text" />
+        <input id="element_0" name="element_0" value="" size="100" class="validate[required]" type="text" />
         <div style="padding-bottom:8px;color:#000000;"></div>
       </td>
     </tr>
@@ -40,7 +40,7 @@ include("../inc/header.php");
     </tr>
     <tr>
       <td id="td_element_field_1" style="">
-        <input id="element_1" name="element_1" value="" size="50" class="validate[required]" type="text" />
+        <input id="element_1" name="element_1" value="" size="100" class="validate[required]" type="text" />
         <div style="padding-bottom:8px;color:#000000;"></div>
       </td>
     </tr>
@@ -51,7 +51,7 @@ include("../inc/header.php");
     </tr>
     <tr>
       <td id="td_element_field_2" style="">
-        <input id="element_2" name="element_2" value="" size="50" class="validate[required]" type="text" />
+        <input id="element_2" name="element_2" value="" size="100" class="validate[required]" type="text" />
         <div style="padding-bottom:8px;color:#000000;"></div>
       </td>
     </tr>
@@ -73,7 +73,7 @@ include("../inc/header.php");
     </tr>
     <tr>
       <td style="">
-        <input id="element_3_confirm" class="validate[confirm[element_3]]" value="" size="50" type="text" onpaste="return false;" />
+        <input id="element_3_confirm" class="validate[confirm[element_3]]" value="" size="100" type="text" onpaste="return false;" />
       </td>
     </tr>
     <tr valign="top">
@@ -114,7 +114,7 @@ include("../inc/header.php");
     </tr>
     <tr>
       <td id="td_element_field_5" style="">
-        <input id="element_5" name="element_5" value="" size="50" class="validate[required]" type="text" />
+        <input id="element_5" name="element_5" value="" size="100" class="validate[required]" type="text" />
         <div style="padding-bottom:8px;color:#000000;"></div>
       </td>
     </tr>
@@ -125,7 +125,7 @@ include("../inc/header.php");
     </tr>
     <tr>
       <td id="td_element_field_6" style="">
-        <textarea id="element_6" name="element_6" cols="100" rows="15" class="validate[required]">
+        <textarea id="element_6" name="element_6" cols="300" rows="15" class="validate[required]">
 </textarea>
         <div style="padding-bottom:8px;color:#000000;"></div>
       </td>
