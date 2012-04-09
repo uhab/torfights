@@ -20,7 +20,7 @@ include("../inc/header.php");
         document.getElementById('iBracket').src = document.getElementById('iBracket').src;
         }
 
-        setInterval("refreshIframe()",300000);  // every 5 minutes
+        setInterval("refreshIframe()",30000); 
 
     </script>
 
