@@ -13,8 +13,6 @@ include("../inc/header.php");
 
 <p>Contact form here.</p>
 
-<body>
-
 <link rel="stylesheet" type="text/css" href="http://www.emailmeform.com/builder/styles/dynamic.php?t=post" />
 <link rel="stylesheet" type="text/css" href="http://www.emailmeform.com/builder/theme_css/aU4b9wfLe7" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
@@ -138,4 +136,249 @@ if (typeof $.ui == 'undefined'){
 </textarea> <input type="hidden" name="recaptcha_response_field" value="manual_challenge" /></noscript>
           </div>
         </li>
-        <li id="emf-li-post-button" cla
+        <li id="emf-li-post-button" class="left">
+          <input value="Submit" type="submit" onmouseover="return true;" />
+        </li>
+      </ul><input name="element_counts" value="7" type="hidden" /> <input name="embed" value="forms" type="hidden" />
+    </form>
+  </div>
+</div><br />
+<div style="text-align:center">
+  <font face="Verdana" size="2" color="#000000">Powered by</font><span style="position: relative; padding-left: 3px; bottom: -5px;"><img src=
+  "http://www.emailmeform.com/builder/images/footer-logo.png" /></span><font face="Verdana" size="2" color="#000000">EMF</font> <a style="text-decoration:none;" href="http://www.emailmeform.com/"
+  target="_blank"><font face="Verdana" size="2" color="#000000">Online Form</font></a><br />
+  <a style="line-height:20px;font-size:70%;text-decoration:none;" href="http://www.emailmeform.com/report-abuse.html?http://www.emailmeform.com/builder/form/aU4b9wfLe7" target="_blank"><font face=
+  "Verdana" size="2" color="#000000">Report Abuse</font></a>
+</div><script type="text/javascript">
+//<![CDATA[
+EMF_jQuery(function(){
+        EMF_jQuery("#emf-form").validationEngine({
+                validationEventTriggers:"blur",
+                scroll:true
+        });
+
+
+
+        EMF_jQuery("#emf-form ul li").mousedown(highlight_field_on_mousedown);
+        EMF_jQuery("#emf-form ul li input, #emf-form ul li textarea, #emf-form ul li select").focus(highlight_field_on_focus);
+
+        var form_obj=EMF_jQuery("#emf-container form");
+        if(form_obj.length>0 && form_obj.attr('action').indexOf('#')==-1){
+                form_obj.attr('action', form_obj.attr('action')+document.location.hash);
+        }
+
+        init_rules();
+});
+
+EMF_jQuery(window).load(function(){
+        post_message_for_frame_height();
+        
+});
+
+
+
+var emf_widgets={text : 
+                        function(index){
+                                return $("#element_"+index).val();
+                        }
+                ,number : 
+                        function(index){
+                                return $("#element_"+index).val();
+                        }
+                ,textarea : 
+                        function(index){
+                                return $("#element_"+index).val();
+                        }
+                ,checkbox : 
+                        function(index){
+                                var arr=new Array();
+                                $("input[name='element_"+index+"[]']:checked").each(function(){
+                                        arr[arr.length]=this.value;                             
+                                });
+                                var result=arr.join(", ");
+                                return result;
+                        }
+                ,radio : 
+                        function(index){
+                                var result="";
+                                $("input[name=element_"+index+"]:checked").each(function(){
+                                        result=this.value;                              
+                                });
+                                return result;
+                        }
+                ,select : 
+                        function(index){
+                                return $("#element_"+index).val();
+                        }
+                ,email : 
+                        function(index){
+                                return $("#element_"+index).val();
+                        }
+                ,phone : 
+                        function(index){
+                                var arr=new Array();
+                                $("input[id^=element_"+index+"_]").each(function(){
+                                        arr[arr.length]=this.value;
+                                });
+                                
+                                var result="";
+                                if(arr.length>0){
+                                        result=arr.join("-");
+                                }else{
+                                        result=$("#element_"+index).val();
+                                }
+                                return result;
+                        }
+                ,datetime : 
+                        function(index){
+                                var result="";
+                                
+                                var date_part="";
+                                if($("#element_"+index+"_year").length==1){
+                                        date_part=$("#element_"+index+"_year-mm").val()+"/"+$("#element_"+index+"_year-dd").val()+"/"+$("#element_"+index+"_year").val();
+                                }
+
+                                var time_part="";
+                                if($("#element_"+index+"_hour").length==1){
+                                        time_part=$("#element_"+index+"_hour").val()+":"+$("#element_"+index+"_minute").val()+" "+$("#element_"+index+"_ampm").val();
+                                }
+                                
+                                if(date_part && time_part){
+                                        result=date_part+" "+time_part;
+                                }else{
+                                        result=date_part ? date_part : time_part;
+                                }
+                                
+                                return result;
+                        }
+                ,url : 
+                        function(index){
+                                return $("#element_"+index).val();
+                        }
+                ,file : 
+                        function(index){
+                                return $("#element_"+index).val();
+                        }
+                ,select_multiple : 
+                        function(index){
+                                return $("#element_"+index).val();
+                        }
+                ,price : 
+                        function(index){
+                                var result="";
+                                var arr=new Array();
+                                $("input[id^=element_"+index+"_]").each(function(){
+                                        arr[arr.length]=this.value;
+                                });
+                                result=arr.join(".");
+                                return result;
+                        }
+                ,hidden : 
+                        function(index){
+                                return $("#element_"+index).val();
+                        }
+                ,section_break : 
+                        function(index){
+                                return "";
+                        }
+                ,page_break : 
+                        function(index){
+                                return "";
+                        }
+                ,deprecated : 
+                        function(index){
+                                return $("#element_"+index).val();
+                        }
+                ,address : 
+                        function(index){
+                                var result="";
+                                var element_arr=$("input,select").filter("[name='element_"+index+"[]']").toArray();
+                                result=element_arr[0].value+" "+element_arr[1].value+"\n"
+                                        +element_arr[2].value+","+element_arr[3].value+" "+element_arr[4].value+"\n"
+                                        +element_arr[5].value
+                                return result;
+                        }
+                ,name : 
+                        function(index){
+                                var arr=new Array();
+                                $("input[id^=element_"+index+"_]").each(function(){
+                                        arr[arr.length]=this.value;
+                                });
+                                var result=arr.join(" ");
+                                return result;
+                        }
+                };
+
+var emf_condition_id_to_js_map={1 : 
+                        function(field_value, value){
+                                return field_value.indexOf(value)>-1;
+                        }
+                ,2 : 
+                        function(field_value, value){
+                                return field_value.indexOf(value)==-1;
+                        }
+                ,3 : 
+                        function(field_value, value){
+                                return field_value.indexOf(value)==0;
+                        }
+                        ,4 : 
+                        function(field_value, value){
+                                return field_value.indexOf(value)==field_value.length-value.length;
+                        }
+                ,5 : 
+                        function(field_value, value){
+                                return field_value==value;
+                        }
+                ,6 : 
+                        function(field_value, value){
+                                return field_value!=value;
+                        }
+                ,7 : 
+                        function(field_value, value){
+                                return field_value==value;
+                        }
+                ,8 : 
+                        function(field_value, value){
+                                return field_value>value;
+                        }
+                ,9 : 
+                        function(field_value, value){
+                                return field_value<value;
+                        }
+                ,10 : 
+                        function(field_value, value){
+                                var date_for_field_value=Date.parse(field_value);
+                                var date_for_value=Date.parse(value);
+                                if(date_for_field_value && date_for_value){
+                                        return date_for_field_value == date_for_value;
+                                }
+                                return false;
+                        }
+                ,11 : 
+                        function(field_value, value){
+                                var date_for_field_value=Date.parse(field_value);
+                                var date_for_value=Date.parse(value);
+                                if(date_for_field_value && date_for_value){
+                                        return date_for_field_value < date_for_value;
+                                }
+                                return false;
+                        }
+                ,12 : 
+                        function(field_value, value){
+                                var date_for_field_value=Date.parse(field_value);
+                                var date_for_value=Date.parse(value);
+                                if(date_for_field_value && date_for_value){
+                                        return date_for_field_value > date_for_value;
+                                }
+                                return false;
+                        }
+                };
+var emf_group_to_field_rules_map=[];
+var emf_group_to_page_rules_for_confirmation_map=[];
+
+
+//]]>
+</script>
+
+
+<?php include("../inc/footer.php"); ?>
