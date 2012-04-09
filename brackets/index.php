@@ -11,7 +11,17 @@ include("../inc/header.php");
 <p>Tournament information.</p>
 
 <div id="livebracket">
-    <iframe width='805' height='725' frameborder='1' src='https://docs.google.com/spreadsheet/pub?key=0Anc7cr6pHAmWdDNuX3hMU09fcTJ3N2JwbnMtWTNuS2c&single=true&gid=0&output=html&widget=true'></iframe>
+
+        <script>
+        window.setInterval("reloadIFrame();", 30000);
+
+        function reloadIFrame() {
+         document.frames["iBracket"].location.reload();
+        }
+        </script>
+        
+    <iframe name="iBracket" width='805' height='725' frameborder='1' src='https://docs.google.com/spreadsheet/pub?key=0Anc7cr6pHAmWdDNuX3hMU09fcTJ3N2JwbnMtWTNuS2c&single=true&gid=0&output=html&widget=true'></iframe>
+
 </div>
 
 
