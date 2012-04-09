@@ -27,9 +27,9 @@ include("inc/header.php");
           <p><a class="btn" href="/rules/">View the Rules &raquo;</a></p>
         </div>
         <div class="span4">
-          <h2>Join</h2>
-          <p>How to get involved.</p>
-          <p><a class="btn" href="/join/">Join Us &raquo;</a></p>
+          <h2>Contact</h2>
+          <p>Contact us to get involved.</p>
+          <p><a class="btn" href="/contact/">Contact Us &raquo;</a></p>
         </div>
       </div>
 
