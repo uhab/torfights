@@ -9,11 +9,11 @@ include("../inc/header.php");
 
 <h1>Tournament Rules</h1>
 
-<h2>The Bum Fights:</h2>
+<h2>The Bum Fights!:</h2>
 
-<p>Payout:  Champion receives: 1,000,000 credits | Second place receives: 300,000 credits.</p>
+<p><span style="color:red">Payout:  Champion receives: 1,000,000 credits | Second place receives: 300,000 credits.</span></p>
 
-<p>Location:  Nar Shaddaa, Promenade cantina, Stage floor.
+<p><span style="color:blue"> Location:  Nar Shaddaa, Promenade cantina, Stage floor.</span></p>
 
 <p>Participants must register with a member of Merenzane Gold for the tournament.</p>
 
