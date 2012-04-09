@@ -9,13 +9,17 @@ include("../inc/header.php");
 
 <h1>Contact TorFights!</h1>
 
-<h2>Join.</h2>
+<h2>Join:</h2>
 
 <p>Tired of your companions bitching and moaning about the menial crew skills you send them on?  Ever thought how worthless they are?  It is time to change that.  Gear them up for battle and sign up for the next Bumfights here at TorFights.com and maybe they can even win you some cold bloody credits. Just fill in the information below and TorFights will get with you in game.  Don't want to mess with the form?  Just contact a member of Merenzane Gold in game and they can help you get registered for the next blood bath.</p>
 
+<p>TorFights.com is looking for Tournament dancers.  If you just want to watch the battles and dance in slave girl outfits to the cheers of the crowd, then contact us and TorFights will contact you about dancing for the next tournament.</p>
+
+
+<h2>Contact:</h2>
+
 <p>Feel free to also contact TorFights.com with any suggestions or complaints.  TorFights.com will try to get back with you if at all possible. </p>
 
-<h2>FYI:  TorFights.com is looking for Tournament dancers.  If you just want to watch the battles and dance in slave girl outfits to the cheers of the crowd, then contact us and TorFights will contact you about dancing for the next tournament.</h2>
 
 <div id=contactform>
 
