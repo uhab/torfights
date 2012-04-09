@@ -27,7 +27,7 @@
               <li<?php if($page == "wtf") echo " class=\"active\"";?>><a href="/wtf/">WTF</a></li>
               <li<?php if($page == "brackets") echo " class=\"active\"";?>><a href="/brackets/">Brackets</a></li>
               <li<?php if($page == "rules") echo " class=\"active\"";?>><a href="/rules/">Rules</a></li>
-              <li<?php if($page == "join") echo " class=\"active\"";?>><a href="/join/">Join</a></li>
+              <li<?php if($page == "contact") echo " class=\"active\"";?>><a href="/contact/">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
