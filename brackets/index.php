@@ -9,16 +9,24 @@ include("../inc/header.php");
 
 <head>
 
-    <script type = "text/javascript">
+<script type="text/javascript"><!--
 
-        function refreshIframe() {
-        document.getElementById('iBracket').src = document.getElementById('iBracket').src;
-        }
+    var reloadInterval = 30000;
 
-        setInterval("refreshIframe()",30000); 
+    function init() {
+        setTimeout('reload()',reloadInterval);
+    }
 
-    </script>
-    
+    function reload() {
+        var iframe = document.getElementById('iBracket');
+         if (!iframe) return false;
+        iframe.src = iframe.src;
+        setTimeout('reload()',reloadInterval);
+    }
+
+    window.onload = init;
+--></script>    
+
 </head>
 
 <body>
@@ -28,7 +36,7 @@ include("../inc/header.php");
 
 <div id="livebracket">
         
-    <iframe name="iBracket" width='805' height='725' frameborder='1' src='https://docs.google.com/spreadsheet/pub?key=0Anc7cr6pHAmWdDNuX3hMU09fcTJ3N2JwbnMtWTNuS2c&single=true&gid=0&output=html&widget=true'></iframe>
+    <iframe id="iBracket" width='805' height='725' frameborder='1' src='https://docs.google.com/spreadsheet/pub?key=0Anc7cr6pHAmWdDNuX3hMU09fcTJ3N2JwbnMtWTNuS2c&single=true&gid=0&output=html&widget=true'></iframe>
 
 </div>
 
