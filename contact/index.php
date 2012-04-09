@@ -13,4 +13,4 @@ include("../inc/header.php");
 
 <p>Contact form here.</p>
 
-<?php include("../inc/footer.php"); ?>
+<form id="emf-form" enctype="multipart/
