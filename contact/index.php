@@ -125,7 +125,7 @@ include("../inc/header.php");
     </tr>
     <tr>
       <td id="td_element_field_6" style="">
-        <textarea id="element_6" name="element_6" cols="600" rows="15" class="validate[required]">
+        <textarea id="element_6" name="element_6" cols="100" rows="15" class="validate[required]">
 </textarea>
         <div style="padding-bottom:8px;color:#000000;"></div>
       </td>
@@ -152,12 +152,6 @@ include("../inc/header.php");
     </tr>
   </table>
 </form>
-<div>
-  <font face="Verdana" size="2" color="#000000">Powered by</font><span style="position: relative; padding-left: 3px; bottom: -5px;"><img src=
-  "http://www.emailmeform.com/builder/images/footer-logo.png" /></span><font face="Verdana" size="2" color="#000000">EMF</font> <a style="text-decoration:none;" href="http://www.emailmeform.com/"
-  target="_blank"><font face="Verdana" size="2" color="#000000">Online Form</font></a>
-</div><a style="line-height:20px;font-size:70%;text-decoration:none;" href="http://www.emailmeform.com/report-abuse.html?http://www.emailmeform.com/builder/form/aU4b9wfLe7" target=
-"_blank"><font face="Verdana" size="2" color="#000000">Report Abuse</font></a>
 
 </div>
 
